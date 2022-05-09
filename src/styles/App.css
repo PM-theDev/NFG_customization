@@ -261,19 +261,19 @@ body:after {
   background-image: url(./img/Car/Car_Set1_E46M3_Yellow.png)
 }
 
-.car_set1_evo6 {
+.car_set1_evo6_5_black {
   background-image: url(./img/Car/Car_Set1_Evo6.5_black.png)
 }
 
-.car_set1_evo6 {
+.car_set1_evo6_5_blue {
   background-image: url(./img/Car/Car_Set1_Evo6.5_blue.png)
 }
 
-.car_set1_evo6 {
+.car_set1_evo6_5_red {
   background-image: url(./img/Car/Car_Set1_Evo6.5_red.png)
 }
 
-.car_set1_evo6 {
+.car_set1_evo6_5_white {
   background-image: url(./img/Car/Car_Set1_Evo6.5_white.png)
 }
 
@@ -693,15 +693,15 @@ body:after {
   background-image: url(./img/Neon/Neon_EG_red.png)
 }
 
-.neon_evo6 {
+.neon_evo6_5_blue {
   background-image: url(./img/Neon/Neon_Evo6.5_blue.png)
 }
 
-.neon_evo6 {
+.neon_evo6_5_green {
   background-image: url(./img/Neon/Neon_Evo6.5_green.png)
 }
 
-.neon_evo6 {
+.neon_evo6_5_red {
   background-image: url(./img/Neon/Neon_Evo6.5_red.png)
 }
 
@@ -1005,23 +1005,23 @@ body:after {
   background-image: url(./img/Spoiler/Spoiler_EG_Any_JS.png)
 }
 
-.spoiler_evo6 {
+.spoiler_evo6_5_any_gtwing {
   background-image: url(./img/Spoiler/Spoiler_Evo6.5_Any_GTWing.png)
 }
 
-.spoiler_evo6 {
+.spoiler_evo6_5_black_stock {
   background-image: url(./img/Spoiler/Spoiler_Evo6.5_black_Stock.png)
 }
 
-.spoiler_evo6 {
+.spoiler_evo6_5_blue_stock {
   background-image: url(./img/Spoiler/Spoiler_Evo6.5_blue_Stock.png)
 }
 
-.spoiler_evo6 {
+.spoiler_evo6_5_red_stock {
   background-image: url(./img/Spoiler/Spoiler_Evo6.5_red_Stock.png)
 }
 
-.spoiler_evo6 {
+.spoiler_evo6_5_white_stock {
   background-image: url(./img/Spoiler/Spoiler_Evo6.5_white_Stock.png)
 }
 
@@ -1377,7 +1377,7 @@ body:after {
   background-image: url(./img/Wheels/Wheel_Set1_E46M3_Stock.png)
 }
 
-.wheel_set1_evo6 {
+.wheel_set1_evo6_5_stock {
   background-image: url(./img/Wheels/Wheel_Set1_Evo6.5_Stock.png)
 }
 
