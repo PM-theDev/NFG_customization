@@ -1,373 +1,1693 @@
+html {
+  background-color: rgb(20, 20, 20);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   height: 100vh;
   width: 100vw;
-  background-color: #242275;
+  background-color: rgb(20, 20, 20);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body:after{
+  content: "beta";
+  position: fixed;
+  width: 80px;
+  height: 25px;
+  background: #EE8E4A;
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 27px;
+  transform:rotate(-45deg);
 }
 
-#container_customize{
+#container_customize {
   position: absolute;
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background-color: #242275;
+  background-color: rgb(20, 20, 20);
 }
 
-#background_customize{
+#dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Reddot {
+  background-color: red;
+}
+
+.Greendot {
+  background-color: green;
+}
+
+#background_customize {
   position: absolute;
 }
 
 
-#Wall, #Floor, #Door, #Window, #Lamp, #Rug, #Sofa, #Stuff {
+#Wall, #Floor, #Hoist, #Background, #Car, #BigFurniture, #Neon, #Wheels, #Spoiler, #LeftPoster, #RightQuote, #SmallFurniture_1, #SmallFurniture_2, #SmallFurniture_3 {
   position: absolute;
   width: 1920px;
   height: 1080px;
   left: 15vw;
-  border: 10px solid #EE9927;
+  border: 10px solid #D09315;
   /* width of actual image */
   /* height of actual image */
 }
 
-.RMV-Condo-Wall {
-  background-image : url(./img/Wall/RMV-Condo-Wall.jpg)
+.BG_doorrollerblue {
+  background-image: url(./img/Background/BG_doorrollerblue.png)
 }
 
-.RMV-Condo-Door {
-  background-image : url(./img/Door/RMV-Condo-Door.png)
+.BG_doorrollergray {
+  background-image: url(./img/Background/BG_doorrollergray.png)
 }
 
-.RMV-Condo2 {
-  background-image : url(./img/Door/RMV-Condo2.png)
-}
-.RMV-Condo3 {
-  background-image : url(./img/Door/RMV-Condo3.png)
-}
-.RMV-Condo4 {
-  background-image : url(./img/Door/RMV-Condo4.png)
+.BG_doorrolleropenview {
+  background-image: url(./img/Background/BG_doorrolleropenview.png)
 }
 
-.RMV-Condo-Window {
-  background-image : url(./img/Window/RMV-Condo-Window.png)
+.BG_doorrollerred {
+  background-image: url(./img/Background/BG_doorrollerred.png)
 }
 
-.RMV-Condo-Floor {
-  background-image : url(./img/Floor/RMV-Condo-Floor.png)
+.BG_doorrollerwhite {
+  background-image: url(./img/Background/BG_doorrollerwhite.png)
 }
 
-.RMV-Condo-Stuff {
-  background-image : url(./img/Stuff/RMV-Condo-Stuff.png)
+.BG_doorrolleryellow {
+  background-image: url(./img/Background/BG_doorrolleryellow.png)
 }
 
-.RMV-Condo-Stuff-first {
-  background-image : url(./img/Stuff/RMV-Condo-Stuff-first.png)
+.BigFur_mix1 {
+  background-image: url(./img/BigFurniture/BigFur_mix1.png)
 }
 
-.RMV-Condo-Sofa {
-  background-image : url(./img/Sofa/RMV-Condo-Sofa.png)
+.BigFur_mix2 {
+  background-image: url(./img/BigFurniture/BigFur_mix2.png)
 }
 
-.RMV-Condo-Lamp {
-  background-image : url(./img/Lamp/RMV-Condo-Lamp.png)
+.BigFur_sofablack {
+  background-image: url(./img/BigFurniture/BigFur_sofablack.png)
 }
 
-.RMV-Condo-Rug {
-  background-image : url(./img/Rug/RMV-Condo-Rug.png)
+.BigFur_sofablue {
+  background-image: url(./img/BigFurniture/BigFur_sofablue.png)
 }
 
-
-.RMV_Meta_Wall{
-  background-image: url(./img/Wall/RMV_Meta_Wall.png);
+.BigFur_sofared {
+  background-image: url(./img/BigFurniture/BigFur_sofared.png)
 }
 
-.RMV-Aquatic-Wall{
-  background-image: url(./img/Wall/RMV-Aquatic-Wall.png);
+.BigFur_sofawhite {
+  background-image: url(./img/BigFurniture/BigFur_sofawhite.png)
 }
 
-.RMV-Beach-Wall{
-  background-image: url(./img/Wall/RMV-Beach-Wall.png);
+.BigFur_tire {
+  background-image: url(./img/BigFurniture/BigFur_tire.png)
 }
 
-.RMV-Neon-Wall{
-  background-image: url(./img/Wall/RMV-Neon-Wall.png);
+.BigFur_Tire1_BBS_LM {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_BBS_LM.png)
 }
 
-.RMV-Condo-Floor{
-  background-image: url(./img/Floor/RMV-Condo-Floor.png);
+.BigFur_Tire1_BBS_RS {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_BBS_RS.png)
 }
 
-.RMV_Meta_Floor{
-  background-image: url(./img/Floor/RMV_Meta_Floor.png);
+.BigFur_Tire1_CE28 {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_CE28.png)
 }
 
-.RMV-Aquatic-Floor{
-  background-image: url(./img/Floor/RMV-Aquatic-Floor.png);
+.BigFur_Tire1_Desmond_Evo {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_Desmond_Evo.png)
 }
 
-.RMV-Beach-Floor{
-  background-image: url(./img/Floor/RMV-Beach-Floor.png);
+.BigFur_Tire1_Enkei_TarmacEvo {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_Enkei_TarmacEvo.png)
 }
 
-.RMV-Neon-Floor{
-  background-image: url(./img/Floor/RMV-Neon-Floor.png);
+.BigFur_Tire1_OZ_RacingRally {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_OZ_RacingRally.png)
 }
 
-.RMV-Condo-Door{
-  background-image: url(./img/Door/RMV-Condo-Door.png);
+.BigFur_Tire1_RE30 {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_RE30.png)
 }
 
-.RMV-Aquatic-Door{
-  background-image: url(./img/Door/RMV-Aquatic-Door.png);
+.BigFur_Tire1_Spoon {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_Spoon.png)
 }
 
-.RMV-Hell-Door{
-  background-image: url(./img/Door/RMV-Hell-Door.png);
+.BigFur_Tire1_TE37 {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_TE37.png)
 }
 
-.RMV-Condo-Window{
-  background-image: url(./img/Window/RMV-Condo-Window.png);
+.BigFur_Tire1_Watanabe {
+  background-image: url(./img/BigFurniture/BigFur_Tire1_Watanabe.png)
 }
 
-.RMV_Meta_Window{
-  background-image: url(./img/Window/RMV_Meta_Window.png);
+.BigFur_tire2 {
+  background-image: url(./img/BigFurniture/BigFur_tire2.png)
 }
 
-.RMV-Aquatic-Window.{
-  background-image: url(./img/Window/RMV-Aquatic-Window.png);
+.BigFur_toolCabinet {
+  background-image: url(./img/BigFurniture/BigFur_toolCabinet.png)
 }
 
-.RMV-Beach-Window{
-  background-image: url(./img/Window/RMV-Beach-Window.png);
+.BigFur_Wheels_Show1 {
+  background-image: url(./img/BigFurniture/BigFur_Wheels_Show1.png)
 }
 
-.RMV-Neon-Window{
-  background-image: url(./img/Window/RMV-Neon-Window.png);
+.Car_Set1_180sx_Red {
+  background-image: url(./img/Car/Car_Set1_180sx_Red.png)
 }
 
-.BlackCat-Orga{
-  background-image: url(./img/Window/BlackCat-Orga.png);
+.Car_Set1_180sx_Silver {
+  background-image: url(./img/Car/Car_Set1_180sx_Silver.png)
 }
 
-.BlackCat-Astroboi{
-  background-image: url("./img/Window/BlackCat-Astro boi.png");
+.Car_Set1_180sx_White {
+  background-image: url(./img/Car/Car_Set1_180sx_White.png)
 }
 
-.RMV-Condo-Lamp{
-  background-image: url(./img/Lamp/RMV-Condo-Lamp.png);
+.Car_Set1_180sx_Yellow {
+  background-image: url(./img/Car/Car_Set1_180sx_Yellow.png)
 }
 
-.RMV_Meta_Lamp{
-  background-image: url(./img/Lamp/RMV_Meta_Lamp.png);
+.Car_Set1_1967Mustang_Black {
+  background-image: url(./img/Car/Car_Set1_1967Mustang_Black.png)
 }
 
-.RMV-Aquatic-Lamp{
-  background-image: url(./img/Lamp/RMV-Aquatic-Lamp.png);
+.Car_Set1_1967Mustang_GT500 {
+  background-image: url(./img/Car/Car_Set1_1967Mustang_GT500.png)
 }
 
-.RMV-Beach-Lamp{
-  background-image: url(./img/Lamp/RMV-Beach-Lamp.png);
+.Car_Set1_1967Mustang_Red {
+  background-image: url(./img/Car/Car_Set1_1967Mustang_Red.png)
 }
 
-.RMV-Neon-Lamp{
-  background-image: url(./img/Lamp/RMV-Neon-Lamp.png);
+.Car_Set1_1967Mustang_White {
+  background-image: url(./img/Car/Car_Set1_1967Mustang_White.png)
 }
 
-.RMV-Lamp-UFO{
-  background-image: url(./img/Lamp/RMV-Lamp-UFO.png);
+.Car_Set1_2000GT_Black {
+  background-image: url(./img/Car/Car_Set1_2000GT_Black.png)
 }
 
-.RMV-Condo-Rug{
-  background-image: url(./img/Rug/RMV-Condo-Rug.png);
+.Car_Set1_2000GT_red {
+  background-image: url(./img/Car/Car_Set1_2000GT_red.png)
 }
 
-.RMV_Meta_Rug{
-  background-image: url(./img/Rug/RMV_Meta_Rug.png);
+.Car_Set1_2000GT_White {
+  background-image: url(./img/Car/Car_Set1_2000GT_White.png)
 }
 
-.RMV-Aquatic-Rug{
-  background-image: url(./img/Rug/RMV-Aquatic-Rug.png);
+.Car_Set1_AE86_BlackWhite {
+  background-image: url(./img/Car/Car_Set1_AE86_BlackWhite.png)
 }
 
-.RMV-Beach-Rug{
-  background-image: url(./img/Rug/RMV-Beach-Rug.png);
+.Car_Set1_AE86_Red {
+  background-image: url(./img/Car/Car_Set1_AE86_Red.png)
 }
 
-.RMV-Neon-Rug{
-  background-image: url(./img/Rug/RMV-Neon-Rug.png);
+.Car_Set1_AE86_Silver {
+  background-image: url(./img/Car/Car_Set1_AE86_Silver.png)
 }
 
-.Rug-Tiger{
-  background-image: url(./img/Rug/Rug-Tiger.png);
+.Car_Set1_AE86_White {
+  background-image: url(./img/Car/Car_Set1_AE86_White.png)
 }
 
-.Rug-Zen{
-  background-image: url(./img/Rug/Rug-Zen.png);
+.Car_Set1_DC5_blue {
+  background-image: url(./img/Car/Car_Set1_DC5_blue.png)
 }
 
-.RMV-Condo-Sofa{
-  background-image: url(./img/Sofa/RMV-Condo-Sofa.png);
+.Car_Set1_DC5_red {
+  background-image: url(./img/Car/Car_Set1_DC5_red.png)
 }
 
-.RMV_Meta_Sofa{
-  background-image: url(./img/Sofa/RMV_Meta_Sofa.png);
+.Car_Set1_DC5_Silver {
+  background-image: url(./img/Car/Car_Set1_DC5_Silver.png)
 }
 
-.RMV-Aquatic-Sofa{
-  background-image: url(./img/Sofa/RMV-Aquatic-Sofa.png);
+.Car_Set1_DC5_white {
+  background-image: url(./img/Car/Car_Set1_DC5_white.png)
 }
 
-.RMV-Beach-Sofa{
-  background-image: url(./img/Sofa/RMV-Beach-Sofa.png);
+.Car_Set1_E46M3_Blue {
+  background-image: url(./img/Car/Car_Set1_E46M3_Blue.png)
 }
 
-.RMV-Neon-Sofa{
-  background-image: url(./img/Sofa/RMV-Neon-Sofa.png);
+.Car_Set1_E46M3_Silver {
+  background-image: url(./img/Car/Car_Set1_E46M3_Silver.png)
 }
 
-
-.Sofa-Cloud9{
-  background-image: url(./img/Sofa/Sofa-Cloud9.png);
+.Car_Set1_E46M3_Yellow {
+  background-image: url(./img/Car/Car_Set1_E46M3_Yellow.png)
 }
 
-.Sofa-NihonGhost{
-  background-image: url("./img/Sofa/Sofa-Nihon Ghost.png");
+.Car_Set1_Evo6 {
+  background-image: url(./img/Car/Car_Set1_Evo6.5_black.png)
 }
 
-.RMV-Condo-Stuff{
-  background-image: url(./img/Stuff/RMV-Condo-Stuff.png);
+.Car_Set1_Evo6 {
+  background-image: url(./img/Car/Car_Set1_Evo6.5_blue.png)
 }
 
-.RMV_Meta_Stuff{
-  background-image: url(./img/Stuff/RMV_Meta_Stuff.png);
+.Car_Set1_Evo6 {
+  background-image: url(./img/Car/Car_Set1_Evo6.5_red.png)
 }
 
-.RMV-Aquatic-Stuff{
-  background-image: url(./img/Stuff/RMV-Aquatic-Stuff.png);
+.Car_Set1_Evo6 {
+  background-image: url(./img/Car/Car_Set1_Evo6.5_white.png)
 }
 
-.RMV-Beach-Stuff{
-  background-image: url(./img/Stuff/RMV-Beach-Stuff.png);
+.Car_Set1_EVOX_Black {
+  background-image: url(./img/Car/Car_Set1_EVOX_Black.png)
 }
 
-.RMV-Neon-Stuff{
-  background-image: url(./img/Stuff/RMV-Neon-Stuff.png);
+.Car_Set1_EVOX_Blue {
+  background-image: url(./img/Car/Car_Set1_EVOX_Blue.png)
 }
 
-.BlackCat-Arcade{
-  background-image: url(./img/Stuff/BlackCat-Arcade.png);
+.Car_Set1_EVOX_Red {
+  background-image: url(./img/Car/Car_Set1_EVOX_Red.png)
 }
 
-.BlackCat-MetaFire{
-  background-image: url("./img/Stuff/BlackCat-Meta Fire.png");
+.Car_Set1_EVOX_Silver {
+  background-image: url(./img/Car/Car_Set1_EVOX_Silver.png)
 }
 
-.RMV-Door_Space{
-  background-image: url(./img/Door/RMV-Door_Space.png);
+.Car_Set1_EVOX_White {
+  background-image: url(./img/Car/Car_Set1_EVOX_White.png)
 }
 
-#nextWall{
-  position:absolute;
+.Car_Set1_FD3S_Blue {
+  background-image: url(./img/Car/Car_Set1_FD3S_Blue.png)
+}
+
+.Car_Set1_FD3S_Silver {
+  background-image: url(./img/Car/Car_Set1_FD3S_Silver.png)
+}
+
+.Car_Set1_FD3S_White {
+  background-image: url(./img/Car/Car_Set1_FD3S_White.png)
+}
+
+.Car_Set1_FD3S_Yellow {
+  background-image: url(./img/Car/Car_Set1_FD3S_Yellow.png)
+}
+
+.Car_Set1_GRYaris_Black {
+  background-image: url(./img/Car/Car_Set1_GRYaris_Black.png)
+}
+
+.Car_Set1_GRYaris_Red {
+  background-image: url(./img/Car/Car_Set1_GRYaris_Red.png)
+}
+
+.Car_Set1_GRYaris_White {
+  background-image: url(./img/Car/Car_Set1_GRYaris_White.png)
+}
+
+.Car_Set1_MX5_Blue {
+  background-image: url(./img/Car/Car_Set1_MX5_Blue.png)
+}
+
+.Car_Set1_MX5_darkblue {
+  background-image: url(./img/Car/Car_Set1_MX5_dark blue.png)
+}
+
+.Car_Set1_MX5_LagunaBlue {
+  background-image: url(./img/Car/Car_Set1_MX5_LagunaBlue.png)
+}
+
+.Car_Set1_MX5_Red {
+  background-image: url(./img/Car/Car_Set1_MX5_Red.png)
+}
+
+.Car_Set1_MX5_Silver {
+  background-image: url(./img/Car/Car_Set1_MX5_Silver.png)
+}
+
+.Car_Set1_Porsche996_Black {
+  background-image: url(./img/Car/Car_Set1_Porsche 996 _Black.png)
+}
+
+.Car_Set1_Porsche996_Green {
+  background-image: url(./img/Car/Car_Set1_Porsche 996 _Green.png)
+}
+
+.Car_Set1_Porsche996_Red {
+  background-image: url(./img/Car/Car_Set1_Porsche 996 _Red.png)
+}
+
+.Car_Set1_Porsche996_Silver {
+  background-image: url(./img/Car/Car_Set1_Porsche 996 _Silver.png)
+}
+
+.Car_Set1_Porsche996_Yellow {
+  background-image: url(./img/Car/Car_Set1_Porsche 996 _Yellow.png)
+}
+
+.Car_Set1_R32_Blue {
+  background-image: url(./img/Car/Car_Set1_R32_Blue.png)
+}
+
+.Car_Set1_R32_Calsonic {
+  background-image: url(./img/Car/Car_Set1_R32_Calsonic.png)
+}
+
+.Car_Set1_R32_Red {
+  background-image: url(./img/Car/Car_Set1_R32_Red.png)
+}
+
+.Car_Set1_R32_Silver {
+  background-image: url(./img/Car/Car_Set1_R32_Silver.png)
+}
+
+.Car_Set1_R32_White {
+  background-image: url(./img/Car/Car_Set1_R32_White.png)
+}
+
+.Car_Set1_SupraA80_Black {
+  background-image: url(./img/Car/Car_Set1_SupraA80_Black.png)
+}
+
+.Car_Set1_SupraA80_Red {
+  background-image: url(./img/Car/Car_Set1_SupraA80_Red.png)
+}
+
+.Car_Set1_SupraA80_Silver {
+  background-image: url(./img/Car/Car_Set1_SupraA80_Silver.png)
+}
+
+.Car_Set1_SupraA80_White {
+  background-image: url(./img/Car/Car_Set1_SupraA80_White.png)
+}
+
+.Car_Set1_SupraA80_Yellow {
+  background-image: url(./img/Car/Car_Set1_SupraA80_Yellow.png)
+}
+
+.Car_Set1_SW20_Black {
+  background-image: url(./img/Car/Car_Set1_SW20_Black.png)
+}
+
+.Car_Set1_SW20_Red {
+  background-image: url(./img/Car/Car_Set1_SW20_Red.png)
+}
+
+.Car_Set1_SW20_White {
+  background-image: url(./img/Car/Car_Set1_SW20_White.png)
+}
+
+.Car_Set1_SW20_Yellow {
+  background-image: url(./img/Car/Car_Set1_SW20_Yellow.png)
+}
+
+.Car_Set2_A45_Red {
+  background-image: url(./img/Car/Car_Set2_A45_Red.png)
+}
+
+.Car_Set2_A45_Silver {
+  background-image: url(./img/Car/Car_Set2_A45_Silver.png)
+}
+
+.Car_Set2_A45_White {
+  background-image: url(./img/Car/Car_Set2_A45_White.png)
+}
+
+.Car_Set2_EG_Blue {
+  background-image: url(./img/Car/Car_Set2_EG_Blue.png)
+}
+
+.Car_Set2_EG_Green {
+  background-image: url(./img/Car/Car_Set2_EG_Green.png)
+}
+
+.Car_Set2_EG_Red {
+  background-image: url(./img/Car/Car_Set2_EG_Red.png)
+}
+
+.Car_Set2_EG_Spoon {
+  background-image: url(./img/Car/Car_Set2_EG_Spoon.png)
+}
+
+.Car_Set2_EG_White {
+  background-image: url(./img/Car/Car_Set2_EG_White.png)
+}
+
+.Car_Set2_EG_Yellow {
+  background-image: url(./img/Car/Car_Set2_EG_Yellow.png)
+}
+
+.Car_Set2_JazzGK_Blue {
+  background-image: url(./img/Car/Car_Set2_JazzGK_Blue.png)
+}
+
+.Car_Set2_JazzGK_Red {
+  background-image: url(./img/Car/Car_Set2_JazzGK_Red.png)
+}
+
+.Car_Set2_JazzGK_Silver {
+  background-image: url(./img/Car/Car_Set2_JazzGK_Silver.png)
+}
+
+.Car_Set2_JazzGK_White {
+  background-image: url(./img/Car/Car_Set2_JazzGK_White.png)
+}
+
+.Car_Set2_JazzGK_Yellow {
+  background-image: url(./img/Car/Car_Set2_JazzGK_Yellow.png)
+}
+
+.Car_Set2_R8_Blue {
+  background-image: url(./img/Car/Car_Set2_R8_Blue.png)
+}
+
+.Car_Set2_R8_Red {
+  background-image: url(./img/Car/Car_Set2_R8_Red.png)
+}
+
+.Car_Set2_R8_Silver {
+  background-image: url(./img/Car/Car_Set2_R8_Silver.png)
+}
+
+.Car_Set2_R8_White {
+  background-image: url(./img/Car/Car_Set2_R8_White.png)
+}
+
+.Car_Set3_PP1_Green {
+  background-image: url(./img/Car/Car_Set3_PP1_Green.png)
+}
+
+.Car_Set3_PP1_Red {
+  background-image: url(./img/Car/Car_Set3_PP1_Red.png)
+}
+
+.Car_Set3_PP1_Silver {
+  background-image: url(./img/Car/Car_Set3_PP1_Silver.png)
+}
+
+.Car_Set3_PP1_Yellow {
+  background-image: url(./img/Car/Car_Set3_PP1_Yellow.png)
+}
+
+.Floor_cement {
+  background-image: url(./img/Floor/Floor_cement.png)
+}
+
+.Floor_gride2tone {
+  background-image: url(./img/Floor/Floor_gride2tone.png)
+}
+
+.Floor_woodbrown {
+  background-image: url(./img/Floor/Floor_woodbrown.png)
+}
+
+.Hoist_black {
+  background-image: url(./img/Hoist/Hoist_black.png)
+}
+
+.Hoist_blue {
+  background-image: url(./img/Hoist/Hoist_blue.png)
+}
+
+.Hoist_None {
+  background-image: url(./img/Hoist/Hoist_None.png)
+}
+
+.Hoist_red {
+  background-image: url(./img/Hoist/Hoist_red.png)
+}
+
+.Poster_left_horizontal_1 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_1.png)
+}
+
+.Poster_left_horizontal_10 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_10.png)
+}
+
+.Poster_left_horizontal_11 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_11.png)
+}
+
+.Poster_left_horizontal_12 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_12.png)
+}
+
+.Poster_left_horizontal_13 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_13.png)
+}
+
+.Poster_left_horizontal_14 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_14.png)
+}
+
+.Poster_left_horizontal_2 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_2.png)
+}
+
+.Poster_left_horizontal_3 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_3.png)
+}
+
+.Poster_left_horizontal_4 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_4.png)
+}
+
+.Poster_left_horizontal_5 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_5.png)
+}
+
+.Poster_left_horizontal_6 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_6.png)
+}
+
+.Poster_left_horizontal_7 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_7.png)
+}
+
+.Poster_left_horizontal_8 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_8.png)
+}
+
+.Poster_left_horizontal_9 {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_9.png)
+}
+
+.Poster_left_horizontal_StreetDoc {
+  background-image: url(./img/LeftPoster/Poster_left_horizontal_StreetDoc.png)
+}
+
+.Poster_left_none {
+  background-image: url(./img/LeftPoster/Poster_left_none.png)
+}
+
+.Poster_left_vertical_1 {
+  background-image: url(./img/LeftPoster/Poster_left_vertical_1.png)
+}
+
+.Poster_left_vertical_2 {
+  background-image: url(./img/LeftPoster/Poster_left_vertical_2.png)
+}
+
+.Poster_left_vertical_3 {
+  background-image: url(./img/LeftPoster/Poster_left_vertical_3.png)
+}
+
+.Poster_left_vertical_4 {
+  background-image: url(./img/LeftPoster/Poster_left_vertical_4.png)
+}
+
+.Neon_180sx_blue {
+  background-image: url(./img/Neon/Neon_180sx_blue.png)
+}
+
+.Neon_180sx_green {
+  background-image: url(./img/Neon/Neon_180sx_green.png)
+}
+
+.Neon_180sx_red {
+  background-image: url(./img/Neon/Neon_180sx_red.png)
+}
+
+.Neon_A45_blue {
+  background-image: url(./img/Neon/Neon_A45_blue.png)
+}
+
+.Neon_A45_green {
+  background-image: url(./img/Neon/Neon_A45_green.png)
+}
+
+.Neon_A45_red {
+  background-image: url(./img/Neon/Neon_A45_red.png)
+}
+
+.Neon_AE86_blue {
+  background-image: url(./img/Neon/Neon_AE86_blue.png)
+}
+
+.Neon_AE86_green {
+  background-image: url(./img/Neon/Neon_AE86_green.png)
+}
+
+.Neon_AE86_red {
+  background-image: url(./img/Neon/Neon_AE86_red.png)
+}
+
+.Neon_Any_Any {
+  background-image: url(./img/Neon/Neon_Any_Any.png)
+}
+
+.Neon_DC5_blue {
+  background-image: url(./img/Neon/Neon_DC5_blue.png)
+}
+
+.Neon_DC5_green {
+  background-image: url(./img/Neon/Neon_DC5_green.png)
+}
+
+.Neon_DC5_red {
+  background-image: url(./img/Neon/Neon_DC5_red.png)
+}
+
+.Neon_E46M3_blue {
+  background-image: url(./img/Neon/Neon_E46M3_blue.png)
+}
+
+.Neon_E46M3_green {
+  background-image: url(./img/Neon/Neon_E46M3_green.png)
+}
+
+.Neon_E46M3_red {
+  background-image: url(./img/Neon/Neon_E46M3_red.png)
+}
+
+.Neon_EG_blue {
+  background-image: url(./img/Neon/Neon_EG_blue.png)
+}
+
+.Neon_EG_green {
+  background-image: url(./img/Neon/Neon_EG_green.png)
+}
+
+.Neon_EG_red {
+  background-image: url(./img/Neon/Neon_EG_red.png)
+}
+
+.Neon_Evo6 {
+  background-image: url(./img/Neon/Neon_Evo6.5_blue.png)
+}
+
+.Neon_Evo6 {
+  background-image: url(./img/Neon/Neon_Evo6.5_green.png)
+}
+
+.Neon_Evo6 {
+  background-image: url(./img/Neon/Neon_Evo6.5_red.png)
+}
+
+.Neon_EVOX_blue {
+  background-image: url(./img/Neon/Neon_EVOX_blue.png)
+}
+
+.Neon_EVOX_green {
+  background-image: url(./img/Neon/Neon_EVOX_green.png)
+}
+
+.Neon_EVOX_red {
+  background-image: url(./img/Neon/Neon_EVOX_red.png)
+}
+
+.Neon_FD3S_blue {
+  background-image: url(./img/Neon/Neon_FD3S_blue.png)
+}
+
+.Neon_FD3S_green {
+  background-image: url(./img/Neon/Neon_FD3S_green.png)
+}
+
+.Neon_FD3S_red {
+  background-image: url(./img/Neon/Neon_FD3S_red.png)
+}
+
+.Neon_GRYaris_blue {
+  background-image: url(./img/Neon/Neon_GRYaris_blue.png)
+}
+
+.Neon_GRYaris_green {
+  background-image: url(./img/Neon/Neon_GRYaris_green.png)
+}
+
+.Neon_GRYaris_red {
+  background-image: url(./img/Neon/Neon_GRYaris_red.png)
+}
+
+.Neon_JazzGK_blue {
+  background-image: url(./img/Neon/Neon_JazzGK_blue.png)
+}
+
+.Neon_JazzGK_green {
+  background-image: url(./img/Neon/Neon_JazzGK_green.png)
+}
+
+.Neon_JazzGK_red {
+  background-image: url(./img/Neon/Neon_JazzGK_red.png)
+}
+
+.Neon_Porsche996_blue {
+  background-image: url(./img/Neon/Neon_Porsche 996_blue.png)
+}
+
+.Neon_Porsche996_green {
+  background-image: url(./img/Neon/Neon_Porsche 996_green.png)
+}
+
+.Neon_Porsche996_red {
+  background-image: url(./img/Neon/Neon_Porsche 996_red.png)
+}
+
+.Neon_PP1_blue {
+  background-image: url(./img/Neon/Neon_PP1_blue.png)
+}
+
+.Neon_PP1_green {
+  background-image: url(./img/Neon/Neon_PP1_green.png)
+}
+
+.Neon_PP1_red {
+  background-image: url(./img/Neon/Neon_PP1_red.png)
+}
+
+.Neon_R32_blue {
+  background-image: url(./img/Neon/Neon_R32_blue.png)
+}
+
+.Neon_R32_green {
+  background-image: url(./img/Neon/Neon_R32_green.png)
+}
+
+.Neon_R32_red {
+  background-image: url(./img/Neon/Neon_R32_red.png)
+}
+
+.Neon_R8_blue {
+  background-image: url(./img/Neon/Neon_R8_blue.png)
+}
+
+.Neon_R8_green {
+  background-image: url(./img/Neon/Neon_R8_green.png)
+}
+
+.Neon_R8_red {
+  background-image: url(./img/Neon/Neon_R8_red.png)
+}
+
+.Neon_SupraA80_blue {
+  background-image: url(./img/Neon/Neon_SupraA80_blue.png)
+}
+
+.Neon_SupraA80_green {
+  background-image: url(./img/Neon/Neon_SupraA80_green.png)
+}
+
+.Neon_SupraA80_red {
+  background-image: url(./img/Neon/Neon_SupraA80_red.png)
+}
+
+.Neon_SW20_blue {
+  background-image: url(./img/Neon/Neon_SW20_blue.png)
+}
+
+.Neon_SW20_green {
+  background-image: url(./img/Neon/Neon_SW20_green.png)
+}
+
+.Neon_SW20_red {
+  background-image: url(./img/Neon/Neon_SW20_red.png)
+}
+
+.RightQuote_1 {
+  background-image: url(./img/RightQuote/RightQuote_1.png)
+}
+
+.RightQuote_10 {
+  background-image: url(./img/RightQuote/RightQuote_10.png)
+}
+
+.RightQuote_2 {
+  background-image: url(./img/RightQuote/RightQuote_2.png)
+}
+
+.RightQuote_3 {
+  background-image: url(./img/RightQuote/RightQuote_3.png)
+}
+
+.RightQuote_4 {
+  background-image: url(./img/RightQuote/RightQuote_4.png)
+}
+
+.RightQuote_5 {
+  background-image: url(./img/RightQuote/RightQuote_5.png)
+}
+
+.RightQuote_6 {
+  background-image: url(./img/RightQuote/RightQuote_6.png)
+}
+
+.RightQuote_7 {
+  background-image: url(./img/RightQuote/RightQuote_7.png)
+}
+
+.RightQuote_8 {
+  background-image: url(./img/RightQuote/RightQuote_8.png)
+}
+
+.RightQuote_9 {
+  background-image: url(./img/RightQuote/RightQuote_9.png)
+}
+
+.RightQuote_none {
+  background-image: url(./img/RightQuote/RightQuote_none.png)
+}
+
+.SmallFurniture_1_modelCar1 {
+  background-image: url(./img/SmallFurniture_1/SmallFurniture_1_modelCar1.png)
+}
+
+.SmallFurniture_1_TE37OnTire2 {
+  background-image: url(./img/SmallFurniture_1/SmallFurniture_1_TE37OnTire2.png)
+}
+
+.SmallFurniture_1_toolCabinet {
+  background-image: url(./img/SmallFurniture_1/SmallFurniture_1_toolCabinet.png)
+}
+
+.SmallFur2_Seats_RecaroPolePosition_Black {
+  background-image: url(./img/SmallFurniture_2/SmallFur2_Seats_RecaroPolePosition_Black.png)
+}
+
+.SmallFur2_Seats_RecaroPolePosition_Red {
+  background-image: url(./img/SmallFurniture_2/SmallFur2_Seats_RecaroPolePosition_Red.png)
+}
+
+.SmallFur2_Seats_RecaroPolePosition_TwoTone {
+  background-image: url(./img/SmallFurniture_2/SmallFur2_Seats_RecaroPolePosition_TwoTone.png)
+}
+
+.SmallFur2_Seats_RecaroSP3_Red {
+  background-image: url(./img/SmallFurniture_2/SmallFur2_Seats_RecaroSP3_Red.png)
+}
+
+.SmallFur2_Seats_RecaroSP3_TwoTone {
+  background-image: url(./img/SmallFurniture_2/SmallFur2_Seats_RecaroSP3_TwoTone.png)
+}
+
+.SmallFur2_Seats_RecaroSP3_Yellow {
+  background-image: url(./img/SmallFurniture_2/SmallFur2_Seats_RecaroSP3_Yellow.png)
+}
+
+.SmallFurniture_2_Seats {
+  background-image: url(./img/SmallFurniture_2/SmallFurniture_2_Seats.png)
+}
+
+.SmallFurniture_2_Seats_black {
+  background-image: url(./img/SmallFurniture_2/SmallFurniture_2_Seats_black.png)
+}
+
+.SmallFurniture_3_Floor_jack1 {
+  background-image: url(./img/SmallFurniture_3/SmallFurniture_3_Floor_jack1.png)
+}
+
+.SmallFurniture_3_jack2 {
+  background-image: url(./img/SmallFurniture_3/SmallFurniture_3_jack2.png)
+}
+
+.SmallFurniture_3_PlasticChair2 {
+  background-image: url(./img/SmallFurniture_3/SmallFurniture_3_PlasticChair2.png)
+}
+
+.Spoiler_180sx_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_180sx_Any_GTWing.png)
+}
+
+.Spoiler_180sx_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_180sx_Red_Stock.png)
+}
+
+.Spoiler_180sx_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_180sx_Silver_Stock.png)
+}
+
+.Spoiler_180sx_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_180sx_White_Stock.png)
+}
+
+.Spoiler_180sx_Yellow_Stock {
+  background-image: url(./img/Spoiler/Spoiler_180sx_Yellow_Stock.png)
+}
+
+.Spoiler_A45_Any_Stock {
+  background-image: url(./img/Spoiler/Spoiler_A45_Any_Stock.png)
+}
+
+.Spoiler_AE86_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_AE86_Any_GTWing.png)
+}
+
+.Spoiler_Any_Any_Blank {
+  background-image: url(./img/Spoiler/Spoiler_Any_Any_Blank.png)
+}
+
+.Spoiler_DC5_Any_GTWingMugen {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Any_GTWingMugen.png)
+}
+
+.Spoiler_DC5_Blue_GTWingMugen {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Blue_GTWingMugen.png)
+}
+
+.Spoiler_DC5_Blue_Stock {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Blue_Stock.png)
+}
+
+.Spoiler_DC5_Cabon_GTWingMugen {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Cabon_GTWingMugen.png)
+}
+
+.Spoiler_DC5_Red_GTWingMugen {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Red_GTWingMugen.png)
+}
+
+.Spoiler_DC5_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Red_Stock.png)
+}
+
+.Spoiler_DC5_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Silver_Stock.png)
+}
+
+.Spoiler_DC5_Siver_GTWingMugen {
+  background-image: url(./img/Spoiler/Spoiler_DC5_Siver_GTWingMugen.png)
+}
+
+.Spoiler_DC5_White_GTWingMugen {
+  background-image: url(./img/Spoiler/Spoiler_DC5_White_GTWingMugen.png)
+}
+
+.Spoiler_DC5_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_DC5_White_Stock.png)
+}
+
+.Spoiler_E46M3_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_E46M3_Any_GTWing.png)
+}
+
+.Spoiler_EG_Any_JS {
+  background-image: url(./img/Spoiler/Spoiler_EG_Any_JS.png)
+}
+
+.Spoiler_Evo6 {
+  background-image: url(./img/Spoiler/Spoiler_Evo6.5_Any_GTWing.png)
+}
+
+.Spoiler_Evo6 {
+  background-image: url(./img/Spoiler/Spoiler_Evo6.5_black_Stock.png)
+}
+
+.Spoiler_Evo6 {
+  background-image: url(./img/Spoiler/Spoiler_Evo6.5_blue_Stock.png)
+}
+
+.Spoiler_Evo6 {
+  background-image: url(./img/Spoiler/Spoiler_Evo6.5_red_Stock.png)
+}
+
+.Spoiler_Evo6 {
+  background-image: url(./img/Spoiler/Spoiler_Evo6.5_white_Stock.png)
+}
+
+.Spoiler_EVOX_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_EVOX_Any_GTWing.png)
+}
+
+.Spoiler_EVOX_Black_Stock {
+  background-image: url(./img/Spoiler/Spoiler_EVOX_Black_Stock.png)
+}
+
+.Spoiler_EVOX_Blue_Stock {
+  background-image: url(./img/Spoiler/Spoiler_EVOX_Blue_Stock.png)
+}
+
+.Spoiler_EVOX_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_EVOX_Red_Stock.png)
+}
+
+.Spoiler_EVOX_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_EVOX_Silver_Stock.png)
+}
+
+.Spoiler_EVOX_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_EVOX_White_Stock.png)
+}
+
+.Spoiler_FD3S_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_FD3S_Any_GTWing.png)
+}
+
+.Spoiler_FD3S_Blue_Stock {
+  background-image: url(./img/Spoiler/Spoiler_FD3S_Blue_Stock.png)
+}
+
+.Spoiler_FD3S_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_FD3S_Silver_Stock.png)
+}
+
+.Spoiler_FD3S_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_FD3S_White_Stock.png)
+}
+
+.Spoiler_FD3S_Yellow_Stock {
+  background-image: url(./img/Spoiler/Spoiler_FD3S_Yellow_Stock.png)
+}
+
+.Spoiler_GRYaris_Any_Stock {
+  background-image: url(./img/Spoiler/Spoiler_GRYaris_Any_Stock.png)
+}
+
+.Spoiler_JazzGK_Any_Stock {
+  background-image: url(./img/Spoiler/Spoiler_JazzGK_Any_Stock.png)
+}
+
+.Spoiler_JazzGK_Blue_Stock {
+  background-image: url(./img/Spoiler/Spoiler_JazzGK_Blue_Stock.png)
+}
+
+.Spoiler_JazzGK_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_JazzGK_Red_Stock.png)
+}
+
+.Spoiler_JazzGK_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_JazzGK_Silver_Stock.png)
+}
+
+.Spoiler_JazzGK_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_JazzGK_White_Stock.png)
+}
+
+.Spoiler_JazzGK_Yellow_Stock {
+  background-image: url(./img/Spoiler/Spoiler_JazzGK_Yellow_Stock.png)
+}
+
+.Spoiler_MX5_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_MX5_Any_GTWing.png)
+}
+
+.Spoiler_Porsche996_Black_AEM {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Black_AEM.png)
+}
+
+.Spoiler_Porsche996_Black_Stock {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Black_Stock.png)
+}
+
+.Spoiler_Porsche996_Green_AEM {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Green_AEM.png)
+}
+
+.Spoiler_Porsche996_Green_Stock {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Green_Stock.png)
+}
+
+.Spoiler_Porsche996_Red_AEM {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Red_AEM.png)
+}
+
+.Spoiler_Porsche996_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Red_Stock.png)
+}
+
+.Spoiler_Porsche996_Silver_AEM {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Silver_AEM.png)
+}
+
+.Spoiler_Porsche996_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Silver_Stock.png)
+}
+
+.Spoiler_Porsche996_Yellow_AEM {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Yellow_AEM.png)
+}
+
+.Spoiler_Porsche996_Yellow_Stock {
+  background-image: url(./img/Spoiler/Spoiler_Porsche 996_Yellow_Stock.png)
+}
+
+.Spoiler_PP1_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_PP1_Any_GTWing.png)
+}
+
+.Spoiler_R32_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_R32_Any_GTWing.png)
+}
+
+.Spoiler_R32_Blue_Stock {
+  background-image: url(./img/Spoiler/Spoiler_R32_Blue_Stock.png)
+}
+
+.Spoiler_R32_Calsonic_Stock {
+  background-image: url(./img/Spoiler/Spoiler_R32_Calsonic_Stock.png)
+}
+
+.Spoiler_R32_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_R32_Red_Stock.png)
+}
+
+.Spoiler_R32_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_R32_Silver_Stock.png)
+}
+
+.Spoiler_R32_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_R32_White_Stock.png)
+}
+
+.Spoiler_R8_Any_AEM {
+  background-image: url(./img/Spoiler/Spoiler_R8_Any_AEM.png)
+}
+
+.Spoiler_R8_Any_OEM {
+  background-image: url(./img/Spoiler/Spoiler_R8_Any_OEM.png)
+}
+
+.Spoiler_SupraA80_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Any_GTWing.png)
+}
+
+.Spoiler_SupraA80_Black_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Black_Stock.png)
+}
+
+.Spoiler_SupraA80_Black_TRD {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Black_TRD.png)
+}
+
+.Spoiler_SupraA80_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Red_Stock.png)
+}
+
+.Spoiler_SupraA80_Red_TRD {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Red_TRD.png)
+}
+
+.Spoiler_SupraA80_Silver_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Silver_Stock.png)
+}
+
+.Spoiler_SupraA80_Silver_TRD {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Silver_TRD.png)
+}
+
+.Spoiler_SupraA80_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_White_Stock.png)
+}
+
+.Spoiler_SupraA80_White_TRD {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_White_TRD.png)
+}
+
+.Spoiler_SupraA80_Yellow_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Yellow_Stock.png)
+}
+
+.Spoiler_SupraA80_Yellow_TRD {
+  background-image: url(./img/Spoiler/Spoiler_SupraA80_Yellow_TRD.png)
+}
+
+.Spoiler_SW20_Any_GTWing {
+  background-image: url(./img/Spoiler/Spoiler_SW20_Any_GTWing.png)
+}
+
+.Spoiler_SW20_Black_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SW20_Black_Stock.png)
+}
+
+.Spoiler_SW20_Red_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SW20_Red_Stock.png)
+}
+
+.Spoiler_SW20_TRD_Black {
+  background-image: url(./img/Spoiler/Spoiler_SW20_TRD_Black.png)
+}
+
+.Spoiler_SW20_TRD_Red {
+  background-image: url(./img/Spoiler/Spoiler_SW20_TRD_Red.png)
+}
+
+.Spoiler_SW20_TRD_White {
+  background-image: url(./img/Spoiler/Spoiler_SW20_TRD_White.png)
+}
+
+.Spoiler_SW20_TRD_Yellow {
+  background-image: url(./img/Spoiler/Spoiler_SW20_TRD_Yellow.png)
+}
+
+.Spoiler_SW20_White_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SW20_White_Stock.png)
+}
+
+.Spoiler_SW20_Yellow_Stock {
+  background-image: url(./img/Spoiler/Spoiler_SW20_Yellow_Stock.png)
+}
+
+.Wall_brickbrown {
+  background-image: url(./img/Wall/Wall_brickbrown.png)
+}
+
+.Wall_brickcement {
+  background-image: url(./img/Wall/Wall_brickcement.png)
+}
+
+.Wall_brickcement2tone {
+  background-image: url(./img/Wall/Wall_brickcement2tone.png)
+}
+
+.Wall_cement {
+  background-image: url(./img/Wall/Wall_cement.png)
+}
+
+.Wall_containerblack {
+  background-image: url(./img/Wall/Wall_containerblack.png)
+}
+
+.Wall_containerblue {
+  background-image: url(./img/Wall/Wall_containerblue.png)
+}
+
+.Wall_containerred {
+  background-image: url(./img/Wall/Wall_containerred.png)
+}
+
+.Wall_horizontal {
+  background-image: url(./img/Wall/Wall_horizontal.png)
+}
+
+.Wall_wood {
+  background-image: url(./img/Wall/Wall_wood.png)
+}
+
+.Wall_woodhorizontal {
+  background-image: url(./img/Wall/Wall_woodhorizontal.png)
+}
+
+.Wheel_Set1_180sx_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_180sx_Stock.png)
+}
+
+.Wheel_Set1_1967Mustang_BBSLM {
+  background-image: url(./img/Wheels/Wheel_Set1_1967Mustang_BBSLM.png)
+}
+
+.Wheel_Set1_1967Mustang_BBSRS {
+  background-image: url(./img/Wheels/Wheel_Set1_1967Mustang_BBSRS.png)
+}
+
+.Wheel_Set1_1967Mustang_GT500 {
+  background-image: url(./img/Wheels/Wheel_Set1_1967Mustang_GT500.png)
+}
+
+.Wheel_Set1_1967Mustang_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_1967Mustang_Stock.png)
+}
+
+.Wheel_Set1_2000GT_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_2000GT_Stock.png)
+}
+
+.Wheel_Set1_AE86_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_AE86_Stock.png)
+}
+
+.Wheel_Set1_Any_BBSLM {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_BBSLM.png)
+}
+
+.Wheel_Set1_Any_BBSRS {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_BBSRS.png)
+}
+
+.Wheel_Set1_Any_CE28 {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_CE28.png)
+}
+
+.Wheel_Set1_Any_DesmondEvo {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_DesmondEvo.png)
+}
+
+.Wheel_Set1_Any_EnkeiTarmac {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_EnkeiTarmac.png)
+}
+
+.Wheel_Set1_Any_OZRacingRally {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_OZRacingRally.png)
+}
+
+.Wheel_Set1_Any_RE30 {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_RE30.png)
+}
+
+.Wheel_Set1_Any_Spoon {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_Spoon.png)
+}
+
+.Wheel_Set1_Any_TE37 {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_TE37.png)
+}
+
+.Wheel_Set1_Any_Watanabe {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_Watanabe.png)
+}
+
+.Wheel_Set1_Any_Watanabe5Spot {
+  background-image: url(./img/Wheels/Wheel_Set1_Any_Watanabe5Spot.png)
+}
+
+.Wheel_Set1_DC5_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_DC5_Stock.png)
+}
+
+.Wheel_Set1_E46M3_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_E46M3_Stock.png)
+}
+
+.Wheel_Set1_Evo6 {
+  background-image: url(./img/Wheels/Wheel_Set1_Evo6.5_Stock.png)
+}
+
+.Wheel_Set1_EVOX_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_EVOX_Stock.png)
+}
+
+.Wheel_Set1_FD3S_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_FD3S_Stock.png)
+}
+
+.Wheel_Set1_GRYaris_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_GRYaris_Stock.png)
+}
+
+.Wheel_Set1_MX5_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_MX5_Stock.png)
+}
+
+.Wheel_Set1_Porsche996_BBMLM {
+  background-image: url("./img/Wheels/Wheel_Set1_Porsche 996_BBMLM.png")
+}
+
+.Wheel_Set1_Porsche996_BCFHCA1620Gold {
+  background-image: url("./img/Wheels/Wheel_Set1_Porsche 996_BCFHCA1620Gold.png")
+}
+
+.Wheel_Set1_Porsche996_BCFHCA1620Silver {
+  background-image: url("./img/Wheels/Wheel_Set1_Porsche 996_BCFHCA1620Silver.png")
+}
+
+.Wheel_Set1_Porsche996_BCFHEH177Black {
+  background-image: url("./img/Wheels/Wheel_Set1_Porsche 996_BCFHEH177Black.png")
+}
+
+.Wheel_Set1_Porsche996_BCFHEH177Silver {
+  background-image: url("./img/Wheels/Wheel_Set1_Porsche 996_BCFHEH177Silver.png")
+}
+
+.Wheel_Set1_Porsche996_Stock {
+  background-image: url("./img/Wheels/Wheel_Set1_Porsche 996_Stock.png")
+}
+
+.Wheel_Set1_R32_Calsonic {
+  background-image: url(./img/Wheels/Wheel_Set1_R32_Calsonic.png)
+}
+
+.Wheel_Set1_R32_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_R32_Stock.png)
+}
+
+.Wheel_Set1_SupraA80_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_SupraA80_Stock.png)
+}
+
+.Wheel_Set1_SW20_Stock {
+  background-image: url(./img/Wheels/Wheel_Set1_SW20_Stock.png)
+}
+
+.Wheel_Set2_A45_Stock {
+  background-image: url(./img/Wheels/Wheel_Set2_A45_Stock.png)
+}
+
+.Wheel_Set2_Any_BBSLM {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_BBSLM.png)
+}
+
+.Wheel_Set2_Any_BBSRS {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_BBSRS.png)
+}
+
+.Wheel_Set2_Any_CE28 {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_CE28.png)
+}
+
+.Wheel_Set2_Any_DesmondEvo {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_DesmondEvo.png)
+}
+
+.Wheel_Set2_Any_EnkeiTarmac {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_EnkeiTarmac.png)
+}
+
+.Wheel_Set2_Any_OZRacingRally {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_OZRacingRally.png)
+}
+
+.Wheel_Set2_Any_RE30 {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_RE30.png)
+}
+
+.Wheel_Set2_Any_Spoon {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_Spoon.png)
+}
+
+.Wheel_Set2_Any_TE37 {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_TE37.png)
+}
+
+.Wheel_Set2_Any_Watanabe_5_Spot {
+  background-image: url(./img/Wheels/Wheel_Set2_Any_Watanabe_5_Spot.png)
+}
+
+.Wheel_Set2_EG_Stock {
+  background-image: url(./img/Wheels/Wheel_Set2_EG_Stock.png)
+}
+
+.Wheel_Set2_JazzGK_Stock {
+  background-image: url(./img/Wheels/Wheel_Set2_JazzGK_Stock.png)
+}
+
+.Wheel_Set2_R8_BBSLM {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_BBSLM.png)
+}
+
+.Wheel_Set2_R8_BCFHCA1620Gold {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_BCFHCA1620Gold.png)
+}
+
+.Wheel_Set2_R8_BCFHCA1620Silver {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_BCFHCA1620Silver.png)
+}
+
+.Wheel_Set2_R8_BCFHEH177Black {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_BCFHEH177Black.png)
+}
+
+.Wheel_Set2_R8_BCFHEH177Silver {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_BCFHEH177Silver.png)
+}
+
+.Wheel_Set2_R8_DesmondEvo {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_DesmondEvo.png)
+}
+
+.Wheel_Set2_R8_Stock {
+  background-image: url(./img/Wheels/Wheel_Set2_R8_Stock.png)
+}
+
+.Wheel_Set3_Any_BBSLM {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_BBSLM.png)
+}
+
+.Wheel_Set3_Any_BBSRS {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_BBSRS.png)
+}
+
+.Wheel_Set3_Any_CE28 {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_CE28.png)
+}
+
+.Wheel_Set3_Any_DesmondEvo {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_DesmondEvo.png)
+}
+
+.Wheel_Set3_Any_EnkeiTarmac {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_EnkeiTarmac.png)
+}
+
+.Wheel_Set3_Any_OZRacingRally {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_OZRacingRally.png)
+}
+
+.Wheel_Set3_Any_RE30 {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_RE30.png)
+}
+
+.Wheel_Set3_Any_Spoon {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_Spoon.png)
+}
+
+.Wheel_Set3_Any_TE37 {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_TE37.png)
+}
+
+.Wheel_Set3_Any_Watanabe {
+  background-image: url(./img/Wheels/Wheel_Set3_Any_Watanabe.png)
+}
+
+.Wheel_Set3_PP1_Stock {
+  background-image: url(./img/Wheels/Wheel_Set3_PP1_Stock.png)
+}
+
+#nextWall {
+  position: absolute;
   left: 2320px;
   top: 500px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
-  
+
 }
 
-#nextFloor{
-  position:absolute;
+#nextFloor {
+  position: absolute;
   left: 2320px;
   top: 550px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#nextDoor{
-  position:absolute;
+#nextHoist {
+  position: absolute;
   left: 2320px;
   top: 600px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#nextLamp{
-  position:absolute;
+#nextBackground {
+  position: absolute;
   left: 2320px;
   top: 650px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#nextView{
-  position:absolute;
+#nextLeftPoster {
+  position: absolute;
   left: 2320px;
   top: 700px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#nextRug{
-  position:absolute;
+#nextRightQuote {
+  position: absolute;
   left: 2320px;
   top: 750px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#nextSofa{
-  position:absolute;
+#nextBigFurniture {
+  position: absolute;
   left: 2320px;
   top: 800px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#nextStuff{
-  position:absolute;
+#nextSmallFurniture_1 {
+  position: absolute;
   left: 2320px;
   top: 850px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
-  background-color: #EE9927;
+  background-color: #D09315;
   font-weight: 500;
 }
 
-#mintnew {
-  position:absolute;
+#nextSmallFurniture_2 {
+  position: absolute;
   left: 2320px;
   top: 900px;
+  color: white;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #D09315;
+  font-weight: 500;
+}
+
+#nextSmallFurniture_3 {
+  position: absolute;
+  left: 2320px;
+  top: 950px;
+  color: white;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #D09315;
+  font-weight: 500;
+}
+
+#nextCar {
+  position: absolute;
+  left: 2320px;
+  top: 1000px;
+  color: white;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #D09315;
+  font-weight: 500;
+}
+
+
+#mintnew {
+  position: absolute;
+  left: 2320px;
+  top: 1050px;
   color: white;
   border-radius: 5px;
   padding: 0 10px;
@@ -376,108 +1696,141 @@ code {
 }
 
 @media screen and (max-width: 2500px) {
-  #Wall, #Floor, #Door, #Window, #Lamp, #Rug, #Sofa, #Stuff {
+  #Wall, #Floor, #Hoist, #Background, #Car, #BigFurniture, #Neon, #Wheels, #Spoiler, #LeftPoster, #RightQuote, #SmallFurniture_1, #SmallFurniture_2, #SmallFurniture_3 {
     position: absolute;
     width: 1920px;
     height: 1080px;
     left: 0vw;
     top: 5vh;
-    border: 10px solid #EE9927;
+    border: 10px solid #D09315;
     /* width of actual image */
     /* height of actual image */
   }
 
-  #nextWall{
-    position:absolute;
+  #nextWall {
+    position: absolute;
     left: 20px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
-    
+
   }
-  
-  #nextFloor{
-    position:absolute;
-    left: 240px;
+
+  #nextFloor {
+    position: absolute;
+    left: 130px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
   }
-  
-  #nextDoor{
-    position:absolute;
-    left: 468px;
+
+  #nextHoist {
+    position: absolute;
+    left: 248px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
   }
-  
-  #nextLamp{
-    position:absolute;
-    left: 695px;
+
+  #nextBackground {
+    position: absolute;
+    left: 368px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
   }
-  
-  #nextView{
-    position:absolute;
-    left: 925px;
+
+  #nextLeftPoster {
+    position: absolute;
+    left: 545px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
   }
-  
-  #nextRug{
-    position:absolute;
-    left: 1150px;
+
+  #nextRightQuote {
+    position: absolute;
+    left: 708px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
   }
-  
-  #nextSofa{
-    position:absolute;
-    left: 1368px;
+
+  #nextBigFurniture {
+    position: absolute;
+    left: 880px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
     font-weight: 500;
   }
-  
-  #nextStuff{
-    position:absolute;
-    left: 1590px;
+
+  #nextSmallFurniture_1 {
+    position: absolute;
+    left: 1060px;
     top: 450px;
     color: white;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #EE9927;
+    background-color: #D09315;
+    font-weight: 500;
+  }
+
+  #nextSmallFurniture_2 {
+    position: absolute;
+    left: 1275px;
+    top: 450px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #D09315;
+    font-weight: 500;
+  }
+
+  #nextSmallFurniture_3 {
+    position: absolute;
+    left: 1490px;
+    top: 450px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #D09315;
+    font-weight: 500;
+  }
+
+  #nextCar {
+    position: absolute;
+    left: 1710px;
+    top: 450px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #D09315;
     font-weight: 500;
   }
 
   #mintnew {
-    position:absolute;
+    position: absolute;
     left: 1590px;
     top: 350px;
     color: white;
@@ -486,5 +1839,5 @@ code {
     background-color: grey;
     font-weight: 500;
   }
-  
+
 }
