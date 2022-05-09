@@ -7,7 +7,7 @@ const Home: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>Roomiverse swapable!</title>
+        <title>NFG customization! (Beta)</title>
         <meta
           name="description"
           content="This site will fly high 🦤"
