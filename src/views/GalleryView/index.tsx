@@ -157,20 +157,20 @@ export const GalleryView: FC = ({ }) => {
       setDotDetail("Greendot")
     }
 
-    setBackgroundDetail(Background[BackgroundState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setWallDetail(Wall[WallState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setBigFurnitureDetail(BigFurniture[BigFurnitureState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setCarDetail(Car[CarState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setNeonDetail(Neon[NeonState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setWheelsDetail(Wheels[WheelsState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setFloorDetail(Floor[FloorState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setSpoilerDetail(Floor[SpoilerState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setHoistDetail(Hoist[HoistState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setLeftPosterDetail(LeftPoster[LeftPosterState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setRightQuoteDetail(RightQuote[RightQuote].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setSmallFurniture_1Detail(SmallFurniture_1[SmallFurniture_1].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setSmallFurniture_2Detail(SmallFurniture_2[SmallFurniture_2].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
-    setSmallFurniture_3Detail(SmallFurniture_3[SmallFurniture_3].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setBackgroundDetail(Background[BackgroundState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setWallDetail(Wall[WallState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setBigFurnitureDetail(BigFurniture[BigFurnitureState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setCarDetail(Car[CarState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setNeonDetail(Neon[NeonState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setWheelsDetail(Wheels[WheelsState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setFloorDetail(Floor[FloorState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setSpoilerDetail(Floor[SpoilerState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setHoistDetail(Hoist[HoistState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setLeftPosterDetail(LeftPoster[LeftPosterState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setRightQuoteDetail(RightQuote[RightQuote].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setSmallFurniture_1Detail(SmallFurniture_1[SmallFurniture_1].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setSmallFurniture_2Detail(SmallFurniture_2[SmallFurniture_2].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
+    setSmallFurniture_3Detail(SmallFurniture_3[SmallFurniture_3].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
 
     return { Background, Wall, BigFurniture, Car, Neon, Wheels, Floor, Hoist, LeftPoster, RightQuote, SmallFurniture_1, SmallFurniture_2, SmallFurniture_3 };
   }
@@ -198,7 +198,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < Background.length ? next_num : 0
     setBackgroundState(new_current)
-    setBackgroundDetail(Background[BackgroundState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setBackgroundDetail(Background[BackgroundState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextWall(Wall: any, WallState: number) {
@@ -206,7 +206,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < Wall.length ? next_num : 0
     setWallState(new_current)
-    setWallDetail(Wall[WallState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setWallDetail(Wall[WallState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextBigFurniture(BigFurniture: any, BigFurnitureState: number) {
@@ -214,7 +214,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < BigFurniture.length ? next_num : 0
     setBigFurnitureState(new_current)
-    setBigFurnitureDetail(BigFurniture[BigFurnitureState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setBigFurnitureDetail(BigFurniture[BigFurnitureState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextCar(Car: any, CarState: number, Neon: any, NeonState: number, Wheels: any, WheelsState: number, Spoiler: any, SpoilerState: number) {
@@ -222,13 +222,13 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < Car.length ? next_num : 0
     setCarState(new_current)
-    setCarDetail(Car[CarState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase().toLowerCase())
+    setCarDetail(Car[CarState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase().toLowerCase())
     setNeonState(new_current)
-    setNeonDetail(Neon[NeonState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setNeonDetail(Neon[NeonState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
     setWheelsState(new_current)
-    setWheelsDetail(Wheels[WheelsState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setWheelsDetail(Wheels[WheelsState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
     setSpoilerState(new_current)
-    setSpoilerDetail(Spoiler[SpoilerState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setSpoilerDetail(Spoiler[SpoilerState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
 
@@ -237,7 +237,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < Floor.length ? next_num : 0
     setFloorState(new_current)
-    setFloorDetail(Floor[FloorState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setFloorDetail(Floor[FloorState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextHoist(Hoist: any, HoistState: number) {
@@ -245,7 +245,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < Hoist.length ? next_num : 0
     setHoistState(new_current)
-    setHoistDetail(Hoist[HoistState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setHoistDetail(Hoist[HoistState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextLeftPoster(LeftPoster: any, LeftPosterState: number) {
@@ -253,7 +253,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < LeftPoster.length ? next_num : 0
     setLeftPosterState(new_current)
-    setLeftPosterDetail(LeftPoster[LeftPosterState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setLeftPosterDetail(LeftPoster[LeftPosterState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
 
@@ -262,7 +262,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < RightQuote.length ? next_num : 0
     setRightQuoteState(new_current)
-    setRightQuoteDetail(RightQuote[RightQuoteState].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setRightQuoteDetail(RightQuote[RightQuoteState].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextSmallFurniture_1(SmallFurniture_1: any, SmallFurniture_1State: number) {
@@ -270,7 +270,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < SmallFurniture_1.length ? next_num : 0
     setSmallFurniture_1State(new_current)
-    setSmallFurniture_1Detail(SmallFurniture_1[SmallFurniture_1State].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setSmallFurniture_1Detail(SmallFurniture_1[SmallFurniture_1State].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextSmallFurniture_2(SmallFurniture_2: any, SmallFurniture_2State: number) {
@@ -278,7 +278,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < SmallFurniture_2.length ? next_num : 0
     setSmallFurniture_2State(new_current)
-    setSmallFurniture_2Detail(SmallFurniture_2[SmallFurniture_2State].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setSmallFurniture_2Detail(SmallFurniture_2[SmallFurniture_2State].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
   function nextSmallFurniture_3(SmallFurniture_3: any, SmallFurniture_3State: number) {
@@ -286,7 +286,7 @@ export const GalleryView: FC = ({ }) => {
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < SmallFurniture_3.length ? next_num : 0
     setSmallFurniture_3State(new_current)
-    setSmallFurniture_3Detail(SmallFurniture_3[SmallFurniture_3State].replace(".jpg", "").replace(".png", "").replace(" ", "").toLowerCase())
+    setSmallFurniture_3Detail(SmallFurniture_3[SmallFurniture_3State].replace(".jpg", "").replace(".png", "").replace(" ", "").replace(".", "_").toLowerCase())
   }
 
 
